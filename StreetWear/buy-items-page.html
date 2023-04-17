@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy item</title>
+    <link rel="stylesheet" href="assets/css/buy-page.css">
+    <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="first_header">
+                Shopping
+                <div class="header_button">
+                    <!-- <i class="ti-user"></i>
+                    <i class="ti-search"></i> -->
+                    <i onclick="shoppingCart()" class="ti-shopping-cart"></i>
+                </div>
+            </div>
+
+            <div class="second_header">
+                <ul class="page_section">
+                    <li><a href="http://127.0.0.1:5500/home-page.html#FOOTWEAR">FOOTWEAR</a></li>
+                    <li><a href="http://127.0.0.1:5500/home-page.html#APPAREL">APPAREL</a></li>
+                    <li><a href="http://127.0.0.1:5500/home-page.html#ACCESSORIES">ACCESSORIES</a></li>
+                    <li><a href="http://127.0.0.1:5500/footwear-page.html">All Items</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Content -->
+        <div id="content">
+            <div class="buy-item">
+                <div class="item-info">
+                    <div class="item-name">AIR FORCE 1 SHADOW</div>
+                    <div class="pointer" onclick="chooseSize()">
+                        <hr>
+                        <a onclick="chooseSize()" class="chooseSize"  href="#">Choose your size</a>
+                        <hr>
+                        <div id="item-size">
+                            <ul>
+                                <li>7 US - New</li>
+                                <li>7.5 US - New</li>
+                                <li>8 US - New</li>
+                                <li>8.5 US - New</li>
+                                <li>9 US - New</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="buy-btn">
+                        <a href="http://127.0.0.1:5500/shopping-cart.html">add to cart</a>
+                        <i class="ti-shopping-cart"></i>
+                    </div>
+                </div>
+                <img src="./assets/img/NikeAf1pink.jpeg" alt="" class="item-img">
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class=" text-center">
+                <img src="/assets/img/FOOTER/logo-page.png" alt="" class="footer-logo">
+            </div>
+
+            <div class="footer-search text-center">
+                <input type="text" placeholder="">
+                <button class="footer-search-btn"><i class="ti-arrow-left "></i></button>
+            </div>
+
+            <div class="footer-content">
+                <div class="col col-third text-center">
+                    <h1>Service & Support</h1>
+                    <p>glabvn@gmail.com</p>
+                    <p>+84945378809</p>
+                    <p>Locations</p>
+                </div>
+                <div class="col col-third text-center">
+                    <h1>Info</h1>
+                    <p>Consignment Terms</p>
+                    <p>Connect with Us</p>
+                    <p>Delivery and Returns</p>
+                </div>
+                <div class="col col-third text-center">
+                    <h1>Follow Us</h1>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Youtube</p>
+                </div>
+            </div>
+
+            <div class="copyright text-center">
+                Copyright © 2018 GLAB.VN
+            </div>
+        </div>
+    </div>
+    <script>
+        function chooseSize(){
+            document.getElementById('item-size').style.display = "block";
+        }   
+        function shoppingCart(){
+                location.assign("http://127.0.0.1:5500/shopping-cart.html");
+        }
+    </script>
+</body>
+
+</html>
